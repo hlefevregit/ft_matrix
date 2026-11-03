@@ -10,7 +10,7 @@ impl<K: Clone, const N: usize> From<[K; N]> for Vector<K> {
 	}
 }
 
-impl<K: std::fmt::Display> std::fmt::Display for Vector<K> {
+impl<K: std::fmt::Display> std::fmt::Display for Vector<K> { 
 	fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
 		for i in self.vec.iter() {
 			write!(f, "[{}]\n", i)?;
